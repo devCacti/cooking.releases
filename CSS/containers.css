@@ -20,7 +20,8 @@ div.container {
     margin: auto;
     left: 25px;
     right: 25px;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     max-height: 750px;
     overflow-x: hidden;
     overflow-y: auto;
