@@ -1,2 +1,2 @@
 # cooking.releases
-Cooking Releases
+https://cooking.releases.devcacti.com
