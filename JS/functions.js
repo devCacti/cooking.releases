@@ -19,23 +19,19 @@ function getReleases() {
                         a.classList = "button";
 
                         if (!latestSet) {
-                            // Create container for latest release
-                            const container = document.createElement("div");
-
                             // Convert markdown body to HTML
                             const descriptionHTML = body ? marked.parse(body) : "";
 
-                            container.innerHTML = `
+                            latestReleaseDiv.innerHTML = `
                                 <h1>${name || "Latest Release"}</h1>
                                 <p><strong>Published:</strong> ${new Date(published_at).toLocaleDateString()}</p>
-                                <div>${descriptionHTML}</div>
+                                ${descriptionHTML}
                                 <br>
                             `;
 
                             const p = document.createElement("p");
                             p.appendChild(a);
-                            container.appendChild(p);
-                            latestReleaseDiv.appendChild(container);
+                            latestReleaseDiv.appendChild(p);
                             latestSet = true;
                         } else {
                             const li = document.createElement("li");

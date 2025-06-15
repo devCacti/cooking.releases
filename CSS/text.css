@@ -121,3 +121,7 @@ footer div p {
 ul.oldReleases li {
     margin: 30px;
 }
+
+p {
+    flex-wrap: wrap;
+}
