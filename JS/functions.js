@@ -25,7 +25,6 @@ function getReleases() {
                             latestReleaseDiv.innerHTML = `
                                 <h1>${name || "Latest Release"}</h1>
                                 <p><strong>Published:</strong> ${new Date(published_at).toLocaleDateString()}</p>
-                                ${descriptionHTML}
                                 <br>
                             `;
 
